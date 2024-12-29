@@ -18,6 +18,15 @@ public class HeightConverter {
 		
 	}
 	
+	public static double convertToCentimetersLocalVar(int feet , int inches) {
+		
+		int feetInInches = feet * 12;
+		int totalInches = feetInInches + inches;
+		double result = convertToCentimeters(totalInches);
+		
+		return result;
+	}
+	
 	
 	// here is a link for conversions : 
 	// https://www.metric-conversions.org/lengh/feet-to-centimeters.htm
